@@ -13,7 +13,7 @@ namespace IdansShortcuts
         /// </summary>
         public static void nuggets()
         {
-            while (true) Console.WriteLine("i ate your nuggets");
+            while (true) Console.WriteLine("I ate your nuggets!!!!!");
         }
         static void options(int option, int counter, string add)
         {
