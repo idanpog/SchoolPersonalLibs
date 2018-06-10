@@ -8,12 +8,13 @@ namespace IdansShortcuts
 {
     public class UserInput
     {
-        /// <summary> 
-        /// prints a nugget
-        /// </summary>
-        /// <returns>nothing</returns>
+
         public static void nuggets()
         {
+            /// <summary> 
+            /// prints a nugget
+            /// </summary>
+            /// <returns>nothing</returns>
             while (true) Console.WriteLine("I ate your nuggets!!!!!");
         }
         static void options(int option, int counter, string add)

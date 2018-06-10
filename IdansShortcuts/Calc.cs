@@ -131,5 +131,9 @@ namespace IdansShortcuts
         {
             return String.ToLower().Contains(Char.ToLower(Char));
         }
+        public static double SecondsToYears(double Seconds)
+        {
+            return (Seconds / (60 * 60 * 24 * 365));
+        }
     }
 }
