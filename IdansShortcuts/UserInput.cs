@@ -264,11 +264,11 @@ namespace IdansShortcuts
             for (int i = 0; i < array.Length; i++)
             { array[i] = String(add + " for index " + i); }
         }
-        //public static void Array<T>(T[] array, string add)
-        //{
-        //    for (int i = 0; i < array.Length; i++)
-        //    { array[i] = Object<T>(array.GetType().ToString()); }
-        //}
+        public static void Array<T>(T[] array, string add)
+        {
+            for (int i = 0; i < array.Length; i++)
+            { array[i] = Object<T>(array.GetType().ToString()); }
+        }
         public static void Matrix(int[,] array, string add)
         {
             for (int i = 0; i < array.GetLength(0); i++)
