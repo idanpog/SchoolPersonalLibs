@@ -8,10 +8,10 @@ namespace IdansShortcuts
 {
     public class UserInput
     {
-        /// <summary>
-        /// Nuggets!!!!!!!!!!!!!!!!!!!!!!
-        /// it's a Test function.
+        /// <summary> 
+        /// prints a nugget
         /// </summary>
+        /// <returns>nothing</returns>
         public static void nuggets()
         {
             while (true) Console.WriteLine("I ate your nuggets!!!!!");
@@ -58,9 +58,6 @@ namespace IdansShortcuts
             { Console.WriteLine("Im disappointed, I could have never imagined that I'll end my life begging to a piece of bones and flash for " + add); }
         }
 
-        /// <summary>
-        /// gets an int input from the user.
-        /// </summary>
         public static int Int(string add)
         {
             int output, option = 0, counter = 1;
@@ -83,9 +80,6 @@ namespace IdansShortcuts
             }
             return output;
         }
-        /// <summary>
-        /// gets a double input from the user.
-        /// </summary>
         public static double Double(string add)
         {
             int option = 0, counter = 1;
