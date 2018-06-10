@@ -8,6 +8,10 @@ namespace IdansShortcuts
 {
     public class Calc
     {
+        static void Inc(ref int Num)
+        {
+            Num++;
+        }
         static int maxN(double sum)
         {
             for (double i = 2; i <= sum; i++)
