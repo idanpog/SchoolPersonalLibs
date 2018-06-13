@@ -326,5 +326,13 @@ namespace IdansShortcuts
                     Matrix[i, j] = Char(add + " for index [" + i + ", " + j + "]");
             }
         }
+        public static void Matrix<T>(T[,] Matrix, string add)
+        {
+            for (int i = 0; i < Matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matrix.GetLength(1); j++)
+                    Matrix[i, j] = Object<T>(add + " for index [" + i + ", " + j + "]");
+            }
+        }
     }
 }
