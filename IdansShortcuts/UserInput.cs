@@ -50,7 +50,7 @@ namespace IdansShortcuts
             else if (option == 20)
             { Console.WriteLine("Im disappointed, I could have never imagined that I'll end my life begging to a piece of bones and flash for " + add); }
         }
-        public static int Int(string add)
+        /*public static int Int(string add)
         {
             int output, option = 0, counter = 1;
             string get;
@@ -207,7 +207,7 @@ namespace IdansShortcuts
                 good = char.TryParse(get, out output);
             }
             return output;
-        }
+        }*/
         public static T Object<T>(string add)
         {
             int option = 0, counter = 1;
@@ -235,7 +235,7 @@ namespace IdansShortcuts
             }
             return get;
         }
-        public static void Array(int[] array, string add)
+        /*public static void Array(int[] array, string add)
         {
             for (int i = 0; i < array.Length; i++)
             { array[i] = Int(add + " for index " + i); }
@@ -264,13 +264,13 @@ namespace IdansShortcuts
         {
             for (int i = 0; i < array.Length; i++)
             { array[i] = String(add + " for index " + i); }
-        }
+        }*/
         public static void Array<T>(T[] array, string add)
         {
             for (int i = 0; i < array.Length; i++)
             { array[i] = Object<T>(array.GetType().ToString()); }
         }
-        public static void Matrix(int[,] array, string add)
+        /*public static void Matrix(int[,] array, string add)
         {
             for (int i = 0; i < array.GetLength(0); i++)
             {
@@ -325,7 +325,7 @@ namespace IdansShortcuts
                 for (int j = 0; j < Matrix.GetLength(1); j++)
                     Matrix[i, j] = Char(add + " for index [" + i + ", " + j + "]");
             }
-        }
+        }*/
         public static void Matrix<T>(T[,] Matrix, string add)
         {
             for (int i = 0; i < Matrix.GetLength(0); i++)
