@@ -9,14 +9,6 @@ namespace IdansShortcuts
     public class UserInput
     {
 
-        public static void nuggets()
-        {
-            /// <summary> 
-            /// prints a nugget
-            /// </summary>
-            /// <returns>nothing</returns>
-            while (true) Console.WriteLine("I ate your nuggets!!!!!");
-        }
         static void options(int option, int counter, string add)
         {
             if (option == 2)
@@ -58,7 +50,6 @@ namespace IdansShortcuts
             else if (option == 20)
             { Console.WriteLine("Im disappointed, I could have never imagined that I'll end my life begging to a piece of bones and flash for " + add); }
         }
-
         public static int Int(string add)
         {
             int output, option = 0, counter = 1;
@@ -217,33 +208,33 @@ namespace IdansShortcuts
             }
             return output;
         }
-        public static T Object<T>(string add)
-        {
-            int option = 0, counter = 1;
-            T get = default(T);
-            Console.WriteLine("please type " + add);
-            bool good = true;
-            try
-            {
-                get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T));
-            }
-            catch { good = false; }
-            while (!good)
-            {
-                counter++;
-                options(option, counter, add);
-                if (option == 0)
-                { Console.WriteLine("Please actually type " + add); option++; }
-                else if (option == 1)
-                { Console.WriteLine("Not kidding, type " + add + "!"); option++; }
+        //public static T Object<T>(string add)
+        //{
+        //    int option = 0, counter = 1;
+        //    T get = default(T);
+        //    Console.WriteLine("please type " + add);
+        //    bool good = true;
+        //    try
+        //    {
+        //        get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T));
+        //    }
+        //    catch { good = false; }
+        //    while (!good)
+        //    {
+        //        counter++;
+        //        options(option, counter, add);
+        //        if (option == 0)
+        //        { Console.WriteLine("Please actually type " + add); option++; }
+        //        else if (option == 1)
+        //        { Console.WriteLine("Not kidding, type " + add + "!"); option++; }
 
-                if (option > 1) option = Calc.Randomizer(2, 20);
-                try { get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T)); }
-                catch { good = false; }
+        //        if (option > 1) option = Calc.Randomizer(2, 20);
+        //        try { get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T)); }
+        //        catch { good = false; }
 
-            }
-            return get;
-        }
+        //    }
+        //    return get;
+        //}
         public static void Array(int[] array, string add)
         {
             for (int i = 0; i < array.Length; i++)
@@ -274,11 +265,11 @@ namespace IdansShortcuts
             for (int i = 0; i < array.Length; i++)
             { array[i] = String(add + " for index " + i); }
         }
-        public static void Array<T>(T[] array, string add)
-        {
-            for (int i = 0; i < array.Length; i++)
-            { array[i] = Object<T>(array.GetType().ToString()); }
-        }
+        //public static void Array<T>(T[] array, string add)
+        //{
+        //    for (int i = 0; i < array.Length; i++)
+        //    { array[i] = Object<T>(array.GetType().ToString()); }
+        //}
         public static void Matrix(int[,] array, string add)
         {
             for (int i = 0; i < array.GetLength(0); i++)

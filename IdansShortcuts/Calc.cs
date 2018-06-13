@@ -82,11 +82,6 @@ namespace IdansShortcuts
             }
             return output;
         }
-        /// <summary>
-        /// fvnvcbvcbc
-        /// </summary>
-        /// <param name="letter"></param>
-        /// <returns></returns>
         public static int LettersToNumbers(char letter)
         {
             if (letter >= 'a' && letter <= 'z')
@@ -95,10 +90,6 @@ namespace IdansShortcuts
                 return (int)letter - (int)'A' + 1;
             else return 0;
         }
-        /// <summary>
-        /// fgfgfgf
-        /// </summary>
-        /// <param name="num"></param>
         public static void numseq(ulong num)
         {
             if (num % 2 == 1)
@@ -121,12 +112,6 @@ namespace IdansShortcuts
                 { Console.WriteLine("can't find a matching sequance"); }
             }
         }
-        /// <summary>
-        /// <para>Bananaaaaaaaaaaaaa</para> vcxvxcv
-        /// </summary>
-        /// <param name="String"></param>
-        /// <param name="Char"></param>
-        /// <returns></returns>
         public static bool Contains(string String, char Char)
         {
             return String.ToLower().Contains(Char.ToLower(Char));
