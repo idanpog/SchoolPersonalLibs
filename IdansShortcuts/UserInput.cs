@@ -208,33 +208,33 @@ namespace IdansShortcuts
             }
             return output;
         }
-        //public static T Object<T>(string add)
-        //{
-        //    int option = 0, counter = 1;
-        //    T get = default(T);
-        //    Console.WriteLine("please type " + add);
-        //    bool good = true;
-        //    try
-        //    {
-        //        get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T));
-        //    }
-        //    catch { good = false; }
-        //    while (!good)
-        //    {
-        //        counter++;
-        //        options(option, counter, add);
-        //        if (option == 0)
-        //        { Console.WriteLine("Please actually type " + add); option++; }
-        //        else if (option == 1)
-        //        { Console.WriteLine("Not kidding, type " + add + "!"); option++; }
+        public static T Object<T>(string add)
+        {
+            int option = 0, counter = 1;
+            T get = default(T);
+            Console.WriteLine("please type " + add);
+            bool good = true;
+            try
+            {
+                get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T));
+            }
+            catch { good = false; }
+            while (!good)
+            {
+                counter++;
+                options(option, counter, add);
+                if (option == 0)
+                { Console.WriteLine("Please actually type " + add); option++; }
+                else if (option == 1)
+                { Console.WriteLine("Not kidding, type " + add + "!"); option++; }
 
-        //        if (option > 1) option = Calc.Randomizer(2, 20);
-        //        try { get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T)); }
-        //        catch { good = false; }
+                if (option > 1) option = Calc.Randomizer(2, 20);
+                try { get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T)); }
+                catch { good = false; }
 
-        //    }
-        //    return get;
-        //}
+            }
+            return get;
+        }
         public static void Array(int[] array, string add)
         {
             for (int i = 0; i < array.Length; i++)
@@ -265,11 +265,11 @@ namespace IdansShortcuts
             for (int i = 0; i < array.Length; i++)
             { array[i] = String(add + " for index " + i); }
         }
-        //public static void Array<T>(T[] array, string add)
-        //{
-        //    for (int i = 0; i < array.Length; i++)
-        //    { array[i] = Object<T>(array.GetType().ToString()); }
-        //}
+        public static void Array<T>(T[] array, string add)
+        {
+            for (int i = 0; i < array.Length; i++)
+            { array[i] = Object<T>(array.GetType().ToString()); }
+        }
         public static void Matrix(int[,] array, string add)
         {
             for (int i = 0; i < array.GetLength(0); i++)
