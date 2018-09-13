@@ -8,6 +8,10 @@ namespace IdansShortcuts
 {
     public class Calc
     {
+        static void Bananaaaaaaaaa()
+        {
+            System.Windows.Forms.MessageBox.Show("Test");
+        }
         static void Inc(ref int Num)
         {
             Num++;

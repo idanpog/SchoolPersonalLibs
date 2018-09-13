@@ -229,7 +229,7 @@ namespace IdansShortcuts
                 { Console.WriteLine("Not kidding, type " + add + "!"); option++; }
 
                 if (option > 1) option = Calc.Randomizer(2, 20);
-                try { get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T)); }
+                try { get = (T)Convert.ChangeType(Console.ReadLine() as object, typeof(T)); good = true; }
                 catch { good = false; }
 
             }
